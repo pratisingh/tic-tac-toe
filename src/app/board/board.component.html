@@ -1,0 +1,29 @@
+<header>
+
+  <div >
+    <input class="btn btn-reset" type="button" value="Reset"  (click)="reset()" />
+  </div>
+  <h3  *ngIf="words" class="animation absolute">{{words}}</h3>
+</header>
+
+<!--<div id="board" >
+
+  <div *ngFor="let square of board" 
+    class="square" 
+    [class.checked]="square.value != ''" 
+    [class.winner]="square.winner"
+    (click)="square_click(this.square)">
+    {{ square.value }}
+  </div>
+</div>-->
+<div class="row">
+  <div class="auto-margin">
+    <div id="board" >
+      <div *ngFor="let gms of game; let i = index;"
+           class="square"
+           (click)="play(i)">
+        {{ gms }}
+      </div>
+    </div>
+  </div>
+</div>
