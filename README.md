@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$
  --password regex
 
-^([1-9])\(?\d{2}\)?[\s.\s]\d{3}[\s.-]\d{4}$  - phone number
+^\(?([1-9]{3})\)?[- ]?([0-9]{3})[-]([0-9]{4})
